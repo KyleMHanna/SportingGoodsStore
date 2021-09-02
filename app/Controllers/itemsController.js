@@ -1,12 +1,15 @@
 import { ProxyState } from "../AppState.js";
 import {itemsService} from "../Services/ItemsService.js";
 
+_drawCart(){
+ document.getel
+}
 
 export class ItemsController {
   constructor() {
-    console.log("hi from item controller");
+    ProxyState.on('cart', _drawCart)
   }
   addItems(){
-    ProxyState.
+    
   }
 }
