@@ -9,6 +9,4 @@ export class Item {
     this.detail = itemData.detail
     this.id = itemData.id || generateId()
   }
-
-  
 }

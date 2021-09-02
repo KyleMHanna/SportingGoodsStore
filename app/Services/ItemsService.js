@@ -3,8 +3,12 @@ import { Item } from "../Models/item.js"
 
 
 class ItemsService {
-  addItems() {
-    ProxyState.items = [...ProxyState.items, new Item]
+
+  constructor(){
+    console.log('Hello from Items service!')
+  }
+  addItems(itemData) {
+    ProxyState.items = [...ProxyState.items, new Item(itemData)]
   }
 }
 
