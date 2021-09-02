@@ -2,7 +2,7 @@ import { ProxyState } from "../AppState.js";
 import {itemsService} from "../Services/ItemsService.js";
 
 _drawCart(){
- document.getel
+document.getElementById('').innerHTML = template
 }
 
 export class ItemsController {
@@ -10,6 +10,6 @@ export class ItemsController {
     ProxyState.on('cart', _drawCart)
   }
   addItems(){
-    
+    itemsService.addItem
   }
 }
