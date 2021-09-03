@@ -8,7 +8,8 @@ class ItemsService {
     console.log('Hello from Items service!')
   }
   addItems(itemData) {
-    ProxyState.items = [...ProxyState.items, new Item(itemData)]
+var newItems = new Item(itemData)
+    ProxyState.cart = [...ProxyState.cart, new Item(itemData)]
   }
 }
 

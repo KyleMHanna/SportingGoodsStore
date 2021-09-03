@@ -12,18 +12,18 @@ export class Item {
   }
 
 
-  get Template{/*html*/`
+  get Template() {
+    return/*html*/`
   <div class="card">
     <div class="card-header text-center">
-      <h3>'${this.name}'</h3>
+      <h3>${this.name}</h3>
     </div>
     <div class="card-body">
       <p>$${this.price}</p>
       <p>More - ${this.detail}</p>
     </div>
+    <button onclick="removeItem('${this.id}')">remove </button>
   </div>
-
-
 `
   }
 }
